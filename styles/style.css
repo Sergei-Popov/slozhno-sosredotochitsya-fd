@@ -150,8 +150,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
   padding-block-start: 40px;
   padding-block-end: 40px;
   gap: 40px;
@@ -159,8 +157,7 @@
 
 .section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(3,  1fr);
   margin-inline-start: 10px;
   margin-inline-end: 10px;
   gap: 20px;
@@ -176,9 +173,27 @@
   grid-column: 1 / 4;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+  grid-column: 1 / 4;
+}
+
+.gallery img {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+.cards {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+
+}
+
 .card {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
   grid-column: 1 / 4;
 }

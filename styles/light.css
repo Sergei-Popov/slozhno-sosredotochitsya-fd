@@ -1,13 +1,13 @@
 :root.theme-light {
-
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
 
   --accent-color: #ff8dcb;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --color-card-text: #353430;
 
-  .decorated-zone::before, .decorated-zone::after {
+  .decorated-zone::before,
+  .decorated-zone::after {
     border-inline: 1px solid var(--color-card-text);
     border-block: 1px solid var(--color-card-text);
   }
@@ -45,29 +45,29 @@
 
   .header__theme-menu-button:hover {
     border-inline: 1px solid
-    color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+      color-mix(in sRGB, var(--color-card-text) 40%, transparent);
     border-block: 1px solid
-    color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+      color-mix(in sRGB, var(--color-card-text) 40%, transparent);
   }
 
   .header__theme-menu-button:focus-visible {
     border-block-end: 1px solid var(--color-card-text);
   }
-
 }
 
 @media (prefers-color-scheme: light) {
 
   :root {
     --background-image: url(../images/cover-image-light.png);
-    --background-color: #FFF1F7;
+    --background-color: #fff1f7;
 
     --accent-color: #ff8dcb;
-    --title-color: #FFC2E6;
+    --title-color: #ffc2e6;
     --color-card-text: #353430;
   }
 
-  .decorated-zone::before, .decorated-zone::after {
+  .decorated-zone::before,
+  .decorated-zone::after {
     border-inline: 1px solid var(--color-card-text);
     border-block: 1px solid var(--color-card-text);
   }
@@ -104,8 +104,10 @@
   }
 
   .header__theme-menu-button:hover {
-    border-inline: 1px solid color-mix(in sRGB, var(--color-card-text) 40%, transparent);
-    border-block: 1px solid color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+    border-inline: 1px solid
+      color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+    border-block: 1px solid
+      color-mix(in sRGB, var(--color-card-text) 40%, transparent);
   }
 
   .header__theme-menu-button:focus-visible {

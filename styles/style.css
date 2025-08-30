@@ -157,7 +157,7 @@
 
 .section {
   display: grid;
-  grid-template-columns: repeat(3,  1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-inline-start: 10px;
   margin-inline-end: 10px;
   gap: 20px;
@@ -175,7 +175,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3,  1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-column: 1 / 4;
 }
@@ -188,9 +188,8 @@
 .cards {
   grid-column: 1 / 4;
   display: grid;
-  grid-template-columns: repeat(3,  1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
 }
 
 .card {
@@ -278,10 +277,6 @@
     grid-column: 1 / 4;
   }
 
-  .gallery {
-    grid-template-rows: repeat(3, minmax(1fr, 192px));
-  }
-
   .gallery img {
     width: 100%;
     height: 100%;
@@ -289,7 +284,9 @@
   }
 
   .gallery {
-    .sunset{
+    grid-template-rows: repeat(3, minmax(1fr, 192px));
+
+    .sunset {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -324,7 +321,6 @@
       grid-row-end: 4;
     }
   }
-
 }
 
 @media screen and (min-width: 1024px) {

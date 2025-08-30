@@ -1,9 +1,56 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+
   --accent-color: #ff8dcb;
+  --title-color: #FFC2E6;
+  --color-card-text: #353430;
+
+  .decorated-zone::before, .decorated-zone::after {
+    border-inline: 1px solid var(--color-card-text);
+    border-block: 1px solid var(--color-card-text);
+  }
+
+  .decorated-zone::before {
+    top: 10px;
+    right: 0;
+    border-block-end: none;
+    border-inline-start: none;
+  }
+
+  .decorated-zone::after {
+    bottom: 10px;
+    left: 0;
+    border-block-start: none;
+    border-inline-end: none;
+  }
+
+  .decorated__rec {
+    display: none;
+  }
+
+  .section__title,
+  .card__text-link,
+  .title-decor,
+  .header__theme-menu-button {
+    color: var(--color-card-text);
+  }
+
+  .header__theme-menu-button_active {
+    border-inline: 1px solid var(--color-card-text);
+    border-block: 1px solid var(--color-card-text);
+    pointer-events: none;
+  }
+
+  .header__theme-menu-button:hover {
+    border-inline: 1px solid
+    color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+    border-block: 1px solid
+    color-mix(in sRGB, var(--color-card-text) 40%, transparent);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--color-card-text);
+  }
+
 }

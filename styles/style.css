@@ -3,7 +3,6 @@
   background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -44,8 +43,8 @@
 .decorated-zone::after {
   bottom: 10px;
   left: 0;
-  border-top: none;
-  border-right: none;
+  border-block-start: none;
+  border-inline-end: none;
 }
 
 .decorated__rec {

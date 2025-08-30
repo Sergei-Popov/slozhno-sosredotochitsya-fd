@@ -1,0 +1,29 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "0.0.1",
+  "description": "Yandex practicum sprint-3, project slozhno-sosredotochitsya-fd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd.git"
+  },
+  "author": "Sergei Popov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd/issues"
+  },
+  "homepage": "https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd#readme",
+  "dependencies": {
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.1"
+  }
+}

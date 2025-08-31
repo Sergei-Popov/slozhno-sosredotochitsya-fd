@@ -138,7 +138,7 @@
   grid-column: 1 / 4;
   justify-self: end;
   align-self: self-end;
-  color: var(--color-card-text);
+  color: var(--details-title-color);
   font-family: var(--font-family), monospace;
   font-weight: 700;
   font-size: 18px;
@@ -231,6 +231,10 @@
 
 .card__text-link:hover {
   border-block-end: 1px solid var(--color-card-text);
+}
+
+.card__text-link:focus {
+  outline: none;
 }
 
 .card__text-link:focus-visible {
@@ -395,10 +399,6 @@
 
   .decorated-zone::after {
     left: 20px;
-  }
-
-  .decorated__rec {
-    display: none;
   }
 
   .header {

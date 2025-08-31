@@ -23,7 +23,12 @@
   },
   "homepage": "https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd#readme",
   "dependencies": {
-    "prettier": "^3.6.2",
-    "stylelint": "^16.23.1"
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "stylelint": "^16.23.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0"
   }
 }

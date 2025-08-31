@@ -50,8 +50,8 @@
 
 .decorated__rec {
   position: absolute;
-  top: 13px;
-  right: 24px;
+  top: 11px;
+  right: 28px;
   color: var(--accent-color);
   font-family: var(--font-family), monospace;
   font-size: 18px;
@@ -64,7 +64,7 @@
   content: '';
   position: absolute;
   top: 45%;
-  right: -15px;
+  right: -19px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -76,14 +76,15 @@
 .header__theme-menu {
   grid-row: 1;
   justify-self: flex-end;
-  align-self: flex-end;
+  align-self: center;
+  margin-block-start: 60px;
   grid-column: 3 / 3;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
@@ -122,7 +123,7 @@
 .header__title {
   grid-column: 1 / 4;
   justify-self: left;
-  align-self: center;
+  align-self: self-start;
   color: var(--color-pink);
   font-family: var(--font-family), monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -138,7 +139,7 @@
   font-family: var(--font-family), monospace;
   inline-size: 100%;
   justify-self: end;
-  align-self: center;
+  align-self: self-end;
   color: var(--title-color);
   font-size: 18px;
   font-style: normal;
@@ -152,7 +153,7 @@
   flex-direction: column;
   padding-block-start: 40px;
   padding-block-end: 40px;
-  gap: 40px;
+  gap: 50px;
 }
 
 .section {
@@ -161,6 +162,10 @@
   margin-inline-start: 10px;
   margin-inline-end: 10px;
   gap: 20px;
+}
+
+.section_gallery {
+  gap: 10px;
 }
 
 .section__title {
@@ -176,7 +181,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
   grid-column: 1 / 4;
 }
 
@@ -193,6 +198,9 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   grid-column: 1 / 4;
 }
@@ -253,12 +261,49 @@
 
 @media screen and (min-width: 768px) {
 
+
+  .decorated-zone::before {
+    top: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .decorated__rec {
+    top: 21px;
+  }
+
+  .header {
+    padding-block-end: 183px;
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+  }
+
   .header__theme-menu {
     align-self: center;
+    margin-top: 115px;
   }
 
   .header .title-decor {
-    inline-size: 50%;
+    inline-size: 49%;
+  }
+
+  .header__title {
+    align-self: center;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .main {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+    gap: 80px;
+  }
+
+  .section {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
   }
 
   .section .section__title {
@@ -269,12 +314,25 @@
     grid-column: 2 / 4;
   }
 
+  .section .cards .card {
+    max-width: 472px;
+    justify-self: end;
+  }
+
   .content-section .section__title {
     grid-column: 1 / 2;
   }
 
   .content-section .cards {
     grid-column: 1 / 4;
+  }
+
+  .content-section .cards .card {
+    max-width: 100%;
+  }
+
+  .section_gallery {
+    gap: 20px;
   }
 
   .gallery img {
@@ -284,6 +342,7 @@
   }
 
   .gallery {
+    gap: 20px;
     grid-template-rows: repeat(3, minmax(1fr, 192px));
 
     .sunset {
@@ -321,19 +380,55 @@
       grid-row-end: 4;
     }
   }
+
+  .footer {
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+  }
+
+  .footer__title {
+    margin-inline-start: 20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 @media screen and (min-width: 1024px) {
+
+  .decorated-zone::after {
+    left: 20px;
+  }
+
+  .decorated__rec {
+    display: none;
+  }
+
+  .header {
+    padding-block-end: 135px;
+  }
+
+  .header__title {
+    align-self: self-start;
+  }
 
   .header__theme-menu {
     grid-column: 1 / 4;
     justify-self: center;
     align-self: flex-start;
     margin-block-start: 20px;
+    margin-inline-end: -20px;
+  }
+
+  .header__theme-menu {
+    align-self: start;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 10px;
+  }
+
+  .section .cards .card {
+    max-width: 100%;
   }
 
   .content-section .cards .card {
@@ -343,4 +438,9 @@
   .gallery {
     grid-template-rows: repeat(3, minmax(1fr, 260px));
   }
+
+  .footer {
+    margin-inline-start: 0;
+  }
+
 }

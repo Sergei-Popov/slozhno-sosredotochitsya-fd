@@ -261,7 +261,6 @@
 
 @media screen and (min-width: 768px) {
 
-
   .decorated-zone::before {
     top: 20px;
   }
@@ -413,13 +412,9 @@
   .header__theme-menu {
     grid-column: 1 / 4;
     justify-self: center;
-    align-self: flex-start;
+    align-self: start;
     margin-block-start: 20px;
     margin-inline-end: -20px;
-  }
-
-  .header__theme-menu {
-    align-self: start;
   }
 
   .header__theme-menu-list {
@@ -442,5 +437,4 @@
   .footer {
     margin-inline-start: 0;
   }
-
 }

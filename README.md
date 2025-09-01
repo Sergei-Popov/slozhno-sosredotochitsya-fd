@@ -13,6 +13,7 @@
 ## 🌐 Ссылки
 
 - **[Лайв превью](https://slozhno-sosredotochitsya-fd-seven.vercel.app)** - посмотреть проект в действии
+- **[GitHub репозиторий](https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd)** - исходный код проекта
 - **[Автор проекта](https://github.com/Sergei-Popov)** - GitHub профиль разработчика
 
 ## 📚 О проекте

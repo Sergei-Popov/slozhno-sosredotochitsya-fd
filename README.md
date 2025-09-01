@@ -181,3 +181,6 @@ ISC License - проект создан в образовательных цел
 
 **Автор:** [Сергей Попов](https://github.com/Sergei-Popov)  
 **Курс:** Яндекс Практикум - "Фулстек разработчик" (3-й спринт)
+
+## Ссылка на GitHub репозиторий
+https://github.com/Sergei-Popov/slozhno-sosredotochitsya-fd
